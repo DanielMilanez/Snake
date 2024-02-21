@@ -23,6 +23,7 @@
     {"name":"spr_snake_corpo","order":1,"path":"sprites/spr_snake_corpo/spr_snake_corpo.yy",},
     {"name":"obj_body","order":1,"path":"objects/obj_body/obj_body.yy",},
     {"name":"obj_fruit","order":2,"path":"objects/obj_fruit/obj_fruit.yy",},
+    {"name":"snd_death","order":1,"path":"sounds/snd_death/snd_death.yy",},
     {"name":"spr_muro","order":8,"path":"sprites/spr_muro/spr_muro.yy",},
     {"name":"spr_snake_death","order":4,"path":"sprites/spr_snake_death/spr_snake_death.yy",},
     {"name":"obj_cam","order":4,"path":"objects/obj_cam/obj_cam.yy",},
