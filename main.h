@@ -53,9 +53,9 @@ typedef struct {
 void SHOW_GAME(void);
 void SAVE_SCORE(void);
 void PULL_SCORE(void);
-void MOVE_PLAYER(void);
-int MOVE_YOURSELF(void);
 void DELAY(int time_ms);
+void PALYER_CONTROL(void);
+int MOVMENT_CONTROL(void);
 void KEYBOARD_CHECK(void);
 void GAME_OVER_SCREEN(void);
 void INSETR_INTO(int x, int y, int who);
@@ -157,7 +157,7 @@ void INSETR_INTO(int x, int y, int who){
     map[y][x] = who;
 }
 
-int MOVE_YOURSELF(void) {
+int MOVMENT_CONTROL(void) {
     int nextX = X, nextY = Y;
 
     switch (dir_head) {
@@ -197,7 +197,7 @@ int MOVE_YOURSELF(void) {
         snake[i] = snake[i - 1];
     }
 
-    MOVE_PLAYER();  
+    PALYER_CONTROL();  
     snake[0].x = X;
     snake[0].y = Y;
 
@@ -220,7 +220,7 @@ int MOVE_YOURSELF(void) {
     return 1; // Movimento normal
 }
 
-void MOVE_PLAYER(void){
+void PALYER_CONTROL(void){
     last_dir = dir_head;
 
     switch (dir_head){
@@ -237,7 +237,7 @@ void MOVE_PLAYER(void){
 }
 
 void GAME_OVER_SCREEN(void){
-    DELAY(100);
+    DELAY(500);
     if (WINDOWS) system("cls");
     if (LINUX) system("clear");
 
