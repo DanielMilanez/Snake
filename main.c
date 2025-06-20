@@ -23,7 +23,7 @@ int main(void){
     // GAME START UP
     do {
         KEYBOARD_CHECK();
-        game = MOVE_YOURSELF();
+        game = MOVMENT_CONTROL();
         SHOW_GAME();
         DELAY(50);
     } while (game != 0);
