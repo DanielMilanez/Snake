@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <conio.h>
 
-// Informe o sistema operacional
+// ALTERE CASO SEU SISTEMA FOR LINUX
 #define WINDOWS_SYSTEM // para windows
 // #define LINUX_SYSTEM   // para linux 
 
@@ -12,7 +12,6 @@
 #define LINUX   0
 
 #ifdef WINDOWS_SYSTEM
-
     #undef WINDOWS
     #define WINDOWS 1
 #endif
@@ -49,7 +48,7 @@ typedef struct {
 }POINT;
 
 /*---------------------------------------*/
-
+void GAME_INIT(void);
 void SHOW_GAME(void);
 void SAVE_SCORE(void);
 void PULL_SCORE(void);
@@ -60,8 +59,8 @@ void KEYBOARD_CHECK(void);
 void GAME_OVER_SCREEN(void);
 void INSETR_INTO(int x, int y, int who);
 /*---------------------------------------*/
-
 int X, Y;
+int game;
 POINT fruit;
 int score = 0;
 char score_string[5];
@@ -74,6 +73,26 @@ POINT snake[MAX_SNAKE_SIZE];
 int map[SIZE_GAME_LINES][SIZE_GAME] = {{0}};
 
 /*---------------------------------------*/
+
+void GAME_INIT(void){    
+    // LIMPA TERMINAL
+    if (WINDOWS) system("cls");
+    if (LINUX) system("clear");
+    
+    // POSICIONA A SNAKE NO MEIO
+    X = SIZE_GAME / 2;
+    Y = SIZE_GAME_LINES / 2;
+    
+    // POSICIONA O CORPO NO MEIO
+    snake[0].x = X;
+    snake[0].y = Y;
+
+    // GERANDO FRUTA
+    srand(time(NULL));
+    fruit.x = rand() % 32;
+    fruit.y = rand() % 16;
+    game = 0;
+}
 
 void SHOW_GAME(void) {
     char tecla[10] = "k_NONE";
@@ -116,14 +135,17 @@ void SHOW_GAME(void) {
         printf("|\n");
     }
 
-    printf("    USE AS TECLAS PARA MOVER-SE\n");
+    for(int i = 2; i <= SIZE_GAME + 4; ++i)  printf("-");
+    printf("\n|   USE AS SETAS PARA MOVER-SE    |\n");
+    for(int i = 2; i <= SIZE_GAME + 4; ++i)  printf("_");
 
     if (dir_head == vk_up) sprintf(tecla, "k_up     ");
     if (dir_head == vk_down) sprintf(tecla, "k_down ");
     if (dir_head == vk_left) sprintf(tecla, "k_left ");
     if (dir_head == vk_right) sprintf(tecla, "k_right");
 
-    printf("TECLA PRECIONADA: %s", tecla);
+    // Mostrador tecla precionada
+    // printf("TECLA PRECIONADA: %s", tecla);
 
     fflush(stdout);  // Força a impressão no terminal imediatamente
     HIDE_CURSOR();   // Desabilitando visualização do cursor.
@@ -175,7 +197,8 @@ int MOVMENT_CONTROL(void) {
 
     int nextBlock = map[nextY][nextX];
 
-    if (nextBlock == PLAYER_BODDY) {
+    // Colisão com "objetos"
+    if (nextBlock == PLAYER_BODDY || nextBlock == WALL) {
         INSETR_INTO(snake[0].x, snake[0].y, PLAYER_DEAD);
         return 0;
     }
@@ -201,7 +224,6 @@ int MOVMENT_CONTROL(void) {
     snake[0].x = X;
     snake[0].y = Y;
 
-    // Limpa rastro anterior da cobra
     for (int i = 0; i < SIZE_GAME_LINES; i++) {
         for (int j = 0; j < SIZE_GAME; j++) {
             if (map[i][j] == PLAYER_BODDY || map[i][j] == PLAYER_HEAD)
@@ -217,7 +239,7 @@ int MOVMENT_CONTROL(void) {
     INSETR_INTO(fruit.x, fruit.y, FRUIT);
     INSETR_INTO(snake[0].x, snake[0].y, PLAYER_HEAD);
 
-    return 1; // Movimento normal
+    return 1; 
 }
 
 void PALYER_CONTROL(void){
@@ -258,7 +280,6 @@ void GAME_OVER_SCREEN(void){
     printf("========================================\n\n");
 }
 
-// Implementar salvamento de pontuação
 void SAVE_SCORE(void){
     FILE *arq_w;
     arq_w = fopen("score.txt", "w");

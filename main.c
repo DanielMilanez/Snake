@@ -1,35 +1,24 @@
 #include "main.h"
 
 int main(void){
-    
-    PULL_SCORE();
-    
-    // CLEAR TERMINAL
-    if (WINDOWS) system("cls");
-    if (LINUX) system("clear");
-    
-    X = SIZE_GAME / 2;
-    Y = SIZE_GAME_LINES / 2;
-    
-    snake[0].x = X;
-    snake[0].y = Y;
+    PULL_SCORE(); // Puxando informações do arquivo score.txt
+    GAME_INIT(); 
 
-    // Gerando a posição da fruta inicial 
-    srand(time(NULL));
-    fruit.x = rand() % 32;
-    fruit.y = rand() % 16;
-    int game = 0;
+    // WALL   - parede
+    // GROUND - bloco vazio
 
-    // GAME START UP
+    INSETR_INTO(5, 10, GROUND); // Comando para inserir paredes ou outras coisas
+
+    // LOOP DO JOGO
     do {
-        KEYBOARD_CHECK();
-        game = MOVMENT_CONTROL();
-        SHOW_GAME();
-        DELAY(50);
-    } while (game != 0);
+        KEYBOARD_CHECK(); // Verifica teclas precionadas
+        game = MOVMENT_CONTROL(); // Controla movimento
+        SHOW_GAME(); // Exibe o jogo
+        DELAY(50); // Atraso para que o jogo seja fluido
+    } while (game != 0); // Verifica se o jogador perdeu
 
-    GAME_OVER_SCREEN();
-    
-    system("PAUSE");
+    GAME_OVER_SCREEN(); 
+
+    system("PAUSE"); // Espera para não fechar o terminal.
     return 0;
 }
