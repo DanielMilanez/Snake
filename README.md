@@ -39,12 +39,12 @@ Além disso, foram desenvolvidas algumas funcionalidades específicas:
     git clone https://github.com/DanielMilanez/Snake.git
 ```
 
-2. Navegue até o diretório do projeto.
+2. Navegue até o diretório do projeto. Caso esteja usando o terminal acesse o diretório com o código:
 ```bash
     cd Snake
 ```
 
-3. Execute o código
+3. Execute o jogo clicando sobre o aplicativo `SnakeGame.exe`, ou então execute-o em linha de código:
 ```bash
     snake.exe
 ```
@@ -54,12 +54,9 @@ Além disso, foram desenvolvidas algumas funcionalidades específicas:
 
 ## Confira a história em primeira mão!!!
 
-Em meu canal no youtube eu conto como foi o desenvolvimento desse projeto e ainda menciono sobre odesenvolvimento de projetos futuros. Confira a série completa de vídeos no meu canal do YouTube `terminal quest`
+Em meu canal no youtube eu conto como foi o desenvolvimento desse projeto e ainda menciono sobre odesenvolvimento de projetos futuros. Confira a série completa de vídeos no meu canal do YouTube `terminal quest`. [🎥 MiTcH - YouTube](https://www.youtube.com/@mitchzito).
 
-[🎥 MiTcH - YouTube](https://www.youtube.com/@mitchzito).
-
----
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com/?lines=O+mundo+e+pequeno+demais+para+aquels+que+sonham!;Por+isso+a+necessidade+de+criar+novos!&font=Fira%20Code&center=true&color=64F58E&width=1500&height=50&duration=4000&pause=1000" alt="Example Usage - README Typing SVG">
+  <img src="https://readme-typing-svg.demolab.com/?lines=Mas+lembre-se;O+mundo+e+pequeno+demais+para+aquels+que+sonham!;Por+isso+a+necessidade+de+criar+novos!&font=Fira%20Code&center=true&color=64F58E&width=1000&height=50&duration=4000&pause=1000" alt="Example Usage - README Typing SVG">
 </p>
