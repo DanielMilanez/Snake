@@ -54,7 +54,7 @@ Além disso, foram desenvolvidas algumas funcionalidades específicas:
 
 ## Confira a história em primeira mão!!!
 
-Em meu canal no youtube eu conto como foi o desenvolvimento desse projeto e ainda menciono sobre odesenvolvimento de projetos futuros. Confira a série completa de vídeos no meu canal do YouTube `terminal quest`. [🎥 MiTcH - YouTube](https://www.youtube.com/@mitchzito).
+Em meu canal no youtube eu conto como foi o desenvolvimento desse projeto e ainda menciono sobre odesenvolvimento de projetos futuros. Confira a série completa de vídeos no meu canal do YouTube `terminal quest`.
 
 
 <p align="center">
