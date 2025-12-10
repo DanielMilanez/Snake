@@ -37,12 +37,12 @@ Além disso, foram desenvolvidas algumas funcionalidades específicas:
     git clone https://github.com/DanielMilanez/Snake.git
 ```
 
-2. Navegue até o diretório do projeto. Caso esteja usando o terminal acesse o diretório com o código:
+2. Navegue até o diretório do projeto. Digite o comando em seu terminal:
 ```bash
     cd Snake
 ```
 
-3. Execute o jogo clicando sobre o aplicativo `SnakeGame.exe`, ou então execute-o em linha de código:
+3. Execute-o em linha de código:
 ```bash
     snake.exe
 ```
