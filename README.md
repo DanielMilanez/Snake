@@ -1,12 +1,10 @@
 ## Sobre o Projeto
 
->⚠️ Este projeto foi testado em ambiente Windows. Em outros sistemas, pode ser necessário adaptar algumas bibliotecas.
+>⚠️ Este projeto foi testado em ambiente Windows. Em outros sistemas, pode ser necessário adaptar algumas bibliotecas.⚠️
 
-Este sem dúvidas é um clássico atemporal que, além de divertido, representa uma excelente introdução ao desenvolvimento de jogos para iniciantes. Ele foi o primeiro jogo que desenvolvi na vida! Então por isso, resolvi realizar esse projeto, em forma de comemoração aos meus 10 anos como desenvolvedor de jogos (faço jogos desde os 10 anos). Neste projeto, implementamos o `Snake` inteiramente em linguagem C, proporcionando uma oportunidade prática de aprender conceitos fundamentais como manipulação de tempo, controle de fluxo, leitura de entradas do teclado e persistência de dados.
+Desde pequeno, sempre tive muita vontade de criar jogos! E uma das minhas primeiras criações foi o jogo da cobrinha. Este sem dúvidas é um clássico atemporal que, além de divertido, representa uma excelente introdução ao desenvolvimento de jogos para iniciantes, na época eu aprendi bastante. E em forma de comemoração aos meus 10 anos como desenvolvedor de jogos (sim, faço jogos desde os 10 anos). Neste projeto, eu criei o `Snake` inteiramente em linguagem C.
 
-Lembrando que o desenvolvimento completo deste jogo foi documentado passo a passo em uma série de vídeos no meu canal do YouTube, tornando o aprendizado ainda mais acessível e didático.
-
-O Snake consiste em controlar uma cobra que se movimenta pelo terminal, com o objetivo de coletar alimentos gerados aleatoriamente na tela. A cada alimento consumido, a cobra cresce em tamanho, aumentando também a dificuldade do jogo. A partida termina quando a cobra colide com as bordas do mapa ou com seu próprio corpo.
+Lembrando que o desenvolvimento completo deste jogo foi documentado passo a passo em uma série de vídeos no meu canal do YouTube.
 
 ## Funcionalidades e Implementações
 
