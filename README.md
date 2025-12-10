@@ -41,7 +41,7 @@ Além disso, foram desenvolvidas algumas funcionalidades específicas:
 
 2. Navegue até o diretório do projeto.
 ```bash
-    cd Snake/output
+    cd Snake
 ```
 
 3. Execute o código
@@ -52,11 +52,14 @@ Além disso, foram desenvolvidas algumas funcionalidades específicas:
 4. Tente superar meu recorde!
 
 
-## Aprenda a Criar Você Também
+## Confira a história em primeira mão!!!
 
-Quer aprender a desenvolver esse jogo do zero? Confira a série completa de vídeos no meu canal do YouTube, onde explico cada linha de código de forma clara e objetiva:
+Em meu canal no youtube eu conto como foi o desenvolvimento desse projeto e ainda menciono sobre odesenvolvimento de projetos futuros. Confira a série completa de vídeos no meu canal do YouTube `terminal quest`
+
 [🎥 MiTcH - YouTube](https://www.youtube.com/@mitchzito).
 
 ---
 
-> *"O mundo é pequeno demais para aqueles que sonham, por isso a necessidade de se criar novos."*
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com/?lines=O+mundo+e+pequeno+demais+para+aquels+que+sonham!;Por+isso+a+necessidade+de+criar+novos!&font=Fira%20Code&center=true&color=64F58E&width=1500&height=50&duration=4000&pause=1000" alt="Example Usage - README Typing SVG">
+</p>
