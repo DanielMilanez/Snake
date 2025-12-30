@@ -44,7 +44,7 @@ Além disso, foram desenvolvidas algumas funcionalidades específicas:
 
 3. Execute-o em linha de código:
 ```bash
-    snake.exe
+    SnakeGame.exe
 ```
 
 4. Tente superar meu recorde!
